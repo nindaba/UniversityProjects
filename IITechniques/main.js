@@ -1,10 +1,10 @@
+import { QuestionList } from "./components/question-list/question-list.js";
 import {Icons} from "./constants/icons.js";
 import {QUESTIONS} from "./constants/questions.js"
 //setup functions
 const getElementById = (id)=> document.getElementById(id);
 const getRoot = ()=> document.getRootNode();
 const mainApp = getElementById("app");
-
 //node creators fruntions
 const createTextNode = (text)=>{
     return document.createTextNode(text);
@@ -107,4 +107,10 @@ const container = ()=>{
 }
 
 //display to the root
+let questionList = createTypeNode("div",{
+    id: "question-list",
+    className:"question-list"
+});
+new QuestionList(QUESTIONS,questionList);
+mainApp.appendChild(questionList);
 mainApp.appendChild(container());

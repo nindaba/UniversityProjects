@@ -1,3 +1,4 @@
+@import "style-constants.css";
 .list{
     display: flex;
     flex-direction: column;
@@ -6,4 +7,5 @@
     box-shadow: 1px 1px var(--secondary);
     width: 200px;
     border-radius: 5px;
+    background-color: aliceblue;
 }

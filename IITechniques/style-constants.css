@@ -1,0 +1,11 @@
+:root{
+    /* colors */
+    --white-90: rgb(228, 228, 228);
+    --black: rgb(20, 20, 20);
+    --primary: rgb(24, 143, 87);
+    --secondary: rgb(42, 159, 255);
+    --warning: rgb(247, 80, 15);
+
+    /* sizes */
+    --question-size:500px;
+}
